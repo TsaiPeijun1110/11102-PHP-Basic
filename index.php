@@ -21,5 +21,6 @@ $name=$tmp;
 // echo $age;
 // echo $name;
 ?> 
+<!-- 包在html裡的程式碼結尾需加?> -->
 </body>
 </html>
