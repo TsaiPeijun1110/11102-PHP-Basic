@@ -28,5 +28,14 @@ echo "</pre>";
 
 echo $b['姓名'];
 echo $b['星座'];
+echo "<hr>";
+$c=[];
+$c['name']='蔡佩君';
+$c['興趣']=['追劇','聽音樂','看影片'];
+echo "<pre>";
+print_r($c);
+echo "</pre>";
 
-
+echo $c['name'];
+echo $c['興趣'][0];
+echo $c['興趣'][2];
