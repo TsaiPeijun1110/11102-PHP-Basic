@@ -30,6 +30,18 @@ if($score>=60 && $score<=69){
 if($score>=0 && $score<=59){
     $level="E";
 } 
+//使用巢狀判斷
+// if($score>=90 && $score<=100){
+//     $level="A";
+// }else if($score>=80 && $score<=89){
+//     $level="B";
+// }else if($score>=70 && $score<=79){
+//     $level="C";
+// }else  if($score>=60 && $score<=69){
+//     $level="D";  
+// }else if($score>=0 && $score<=59){
+//     $level="E";
+// }
 
 
 echo "成績等級為".$level;
