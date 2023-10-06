@@ -5,7 +5,7 @@
 <?php
 $sum=0;
 
-for($i=1;$i<=1000;$i=$i+1)
+for($i=1;$i<=10;$i=$i+1)
     for($i=1;$i<=10;$i=$i+1){
     // $sum=$sum+$i;
     echo '當$i='.$i."時";
@@ -13,7 +13,7 @@ for($i=1;$i<=1000;$i=$i+1)
     echo $sum ."+".$i;
     }
     
-echo "1加到1000為" .$sum;
+echo "1加到10為" .$sum;
 echo "1加到10為" .$sum;
 
 ?>
@@ -43,7 +43,7 @@ echo "<hr>";
 $a=98;
 
 $flag=true;
-For($i=2;$i<($a/2);$i++){
+for($i=2;$i<($a/2);$i++){
     echo "$a 除以 $i 餘數". ($a % $i);
     if(($a % $i) == 0){
         $flag=false;
@@ -59,6 +59,33 @@ if($flag==true){
     echo $a ."不是質數";
 }
 
+?>
+
+<h3>巢狀迴圈</h3>
+<?php
+$n=100;
+$count=0;
+for($j=3;$j<=$n;$j++){    
+    $flag=true;
+    for($i=2;$i<=($j/2);$i++){
+        $count++;
+        // echo "$a 除以 $i 餘數". ($j % $i);
+        if(($j % $i) == 0){
+            $flag=false;
+            // echo"<br>";
+            // echo "<br>"; 
+            break;                
+        }      
+}
+if($flag==true){
+    echo $j ;
+    echo ",";
+}else{
+    // echo $j ."不是質數";
+}  
+}
 
 
+echo "<br>";
+echo "一共執行了".$count."次的程式內容";
 ?>
