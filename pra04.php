@@ -1,3 +1,10 @@
+
+<style>
+h2{
+    color: thistle;
+}
+</style>
+
 <h2>直角三角形</h2>
 <?php
 echo "*<br>";
@@ -103,4 +110,26 @@ for($i=0;$i<7;$i++){
     echo "<br>";
 }
 echo "<hr>";
+?>
+
+<h2>內含對角線的矩形</h2>
+<?php
+for($i=0;$i<7;$i++){
+
+    for($j=0;$j<7;$j++){
+        if($i==0 || $i==6){
+            echo "*";
+        }else if($j==0 || $j==6 || $j==$i || $i+$j==6){
+            echo "*";
+        }else{
+            echo "&nbsp;";
+        }
+        
+    }
+
+    echo "<br>";
+}
+echo "<hr>";
+
+
 ?>
