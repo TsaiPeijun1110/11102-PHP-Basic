@@ -14,6 +14,17 @@ for($i=0;$i<5;$i++){
     echo "<br>";
 
 }
+echo "<hr>";
+?>
 
+<h2>倒直角三角形</h2>
+<?php
+for($i=4;$i>=0;$i--){
+    for($j=0;$j<=$i;$j++){
+        echo "*";
+    }
+    echo "<br>";
+}
+echo "<hr>";
 
 ?>
