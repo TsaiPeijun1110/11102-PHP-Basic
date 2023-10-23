@@ -32,3 +32,25 @@ while(count($num)<6){
 foreach($num as $n){
     echo $n . ",";
 }
+?>
+<h2>找出五百年內的閏年</h2>
+<ul>
+    <li>請依照閏年公式找出五百年內的閏年</li>
+    <li>使用陣列來儲存閏年</li>
+    <li>使用迴圈來印出閏年</li>
+</ul>
+
+<?php
+$years=[];
+
+for($i=2023;$i<2523;$i++){
+    if(($i%4==0 && $i%100 != 0)|| $i %400 ==0){ 
+    $years[]=$i;         
+   
+ }
+}
+foreach ($years as $key=> $year) {
+    echo $year .",";
+}
+
+?>
