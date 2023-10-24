@@ -59,4 +59,26 @@ if(date("N")<=5){
     echo "假日";
 }
 ?>
-<h2></h2>~
+<h2>利用迴圈來計算連續五個周一的日期</h2>
+例:
+<ul>
+    <li>2021-10-04 星期一</li>
+    <li>2021-10-11 星期一</li>
+    <li>2021-10-18 星期一</li>
+    <li>2021-10-25 星期一</li>
+    <li>2021-11-01 星期一</li>
+</ul>
+<?php
+$todayWeek=date("N");
+$diff=1-$todayWeek;
+$lastMonday=strtotime("$diff days");
+$nextMonday=date("Y-m-d",strtotime("+1 week",$lastMonday));
+
+for($i=0;$i<5;$i++){
+    $nextMonday=date("Y-m-d 1",strtotime("+1 week",strtotime($nextMonday)));
+    echo $nextMonday;
+    echo "<br>";
+}
+echo "<br>";
+?>
+
