@@ -19,7 +19,7 @@
 </head>
 <body>
     <?php
-    if(isset($_GET['month'])&&isset($_GET['year'])){
+    if(isset($_GET['month'])&& isset($_GET['year'])){
         $month=$_GET['month'];
         $year=$_GET['year'];
     }else{
@@ -59,8 +59,8 @@
     }
     ?>
     
-    <a href="?year=<?=$prevYear;?>month=<?=$prev;?>">上一個月</a>
-    <a href="?year=<?=$nextYear;?>?month=<?=$next;?>">下一個月</a>
+    <a href="?year=<?=$prevYear;?>$month=<?=$prev;?>">上一個月</a>
+    <a href="?year=<?=$nextYear;?>$month=<?=$next;?>">下一個月</a>
 </div>
 <table style='width:264px;display:block;margin:auto'>
         <tr>
