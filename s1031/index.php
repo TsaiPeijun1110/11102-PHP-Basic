@@ -14,17 +14,17 @@
     }
    table{
             border-collapse: rgba(255, 99, 71, 1);
-            border:3px double black ;
             width: 60%; 
         }
         td{
             border:1px solid rgba(255, 99, 71, 1) ;
-            padding:5px 10px;
+            padding:12px 13px 14px;
             text-align: center;
-            width: 70%;                      
+            width: 75%;                      
         } 
         tr{
-            width: 30%;
+            width: 70%;
+            height: 10vh;
         }
         bg-darkorange{
             color: darkorange;
@@ -70,6 +70,7 @@ if(($month-1)<1){
 }else{
     $prev=$month-1;
 }
+
 
 ?>
     <a href="?year=<?=$prevYear;?>&month=<?=$prev;?>">上一個月</a>
